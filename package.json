@@ -2,6 +2,7 @@
   "name": "parcel-wind",
   "version": "1.0.0",
   "description": "Parcel + TailwindCSS",
+  "browserslist": ["> 0.5%, last 2 versions, not dead"],
   "dependencies": {},
   "devDependencies": {
     "parcel": "^2.4.0",
