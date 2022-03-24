@@ -2,7 +2,6 @@
   "name": "parcel-wind",
   "version": "1.0.0",
   "description": "Parcel + TailwindCSS",
-  "main": "dist/index.html",
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^10.4.4",
