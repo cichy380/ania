@@ -22,12 +22,12 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <!--  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">-->
 </head>
-<body>
-<nav id="topbar" class="flex items-center fixed min-w-full bg-white px-6 py-2">
-  <h1 class="text-xl text-primary-600 font-bold py-3">Kinezy-Med</h1>
+<body class="overflow-x-hidden">
+<nav id="topbar" class="flex items-center fixed z-20 w-full bg-white transition-shadow duration-300 px-6 py-2">
+  <h1 class="text-3xl text-primary-600 font-handwriting py-3">Kinezy-Med</h1>
   <ul class="grow flex justify-center">
     <li class="inline-block"><a class="hover:text-primary-600 p-1 mx-3" href="#">Home</a></li>
     <li class="inline-block"><a class="hover:text-primary-600 p-1 mx-3" href="#">O mnie</a></li>
@@ -36,39 +36,89 @@
     <li class="inline-block"><a class="hover:text-primary-600 p-1 mx-3" href="#">Czytelnia</a></li>
     <li class="inline-block"><a class="hover:text-primary-600 p-1 mx-3" href="#">Kontakt</a></li>
   </ul>
-  <a class="text flex items-center" href="#">
+  <a class="flex items-center" href="#">
     <div class="bg-green-50 text-green-700 rounded-full p-2">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
         <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
       </svg>
     </div>
-    <span class="ml-2">721 645 234</span>
+    <span class="text-sm ml-2">721 645 234</span>
   </a>
 </nav>
 
-<section id="cover" class="py-16 xl:py-28">
-  <div class="container mx-auto py-16 xl:py-28">
+<section id="cover" class="relative py-16 xl:py-28">
+  <div class="container mx-auto absolute top-0 bottom-0 left-0 right-0 mt-16 xl:mt-28 display-none lg:block z-0">
+    <div class="grid grid-cols-12 absolute top-0 bottom-0 left-0 right-0">
+      <div class="col-span-9"></div>
+      <div class="col-span-3 relative">
+        <div class="absolute top-0 bottom-0 left-0 right-0 bg-primary-600 w-screen -mb-16 xl:-mb-28"></div>
+      </div>
+    </div>
+  </div>
+  <div class="container relative mx-auto py-16 xl:py-28 z-10">
     <div class="grid grid-cols-12">
       <div class="col-span-6 flex items-center">
         <article>
-          <div class="font-heading text-xl mb-6">Witam</div>
-          <div class="font-heading text-3xl mb-6">Jestem <span id="typed"></span></div>
-          <p class="leading-7 mb-6">
-            Mam 7 lat doświadczenia w pracy z pacjentami. W tym czasie nauczyłam się, że nie mogę skupiać się wyłacznie
-            na aparacie ruchu. Kluczowa jest relacja z osobą, której mam pomóc. Poznanie potrzeb mojego pacjenta
-            oraz emocje toważyszące zabiegom.
+          <div class="font-heading font-bold text-xl mb-6">Witam</div>
+          <div class="font-heading font-bold text-3xl mb-6">Jestem <span id="typed"></span></div>
+          <p class="text-slate-700 leading-7 mb-6">
+            Mam <strong class="text-slate-900">7 lat</strong> doświadczenia w pracy z pacjentami. W tym czasie nauczyłam się, że nie mogę skupiać się wyłacznie
+            na aparacie ruchu. Kluczowa jest relacja z osobą, której mam pomóc, poznanie jej potrzeb oraz emocje
+            toważyszące zabiegom.
           </p>
-          <a class="inline-block rounded bg-primary-50 text-primary-600 text-sm font-medium py-2.5 px-4" href="#">więcej o mnie</a>
+          <a class="inline-block rounded bg-primary-50 text-primary-600 text-sm font-medium py-2.5 px-4" href="#">Więcej o mnie</a>
         </article>
       </div>
-      <div class="col-span-2">
-        <!--spacer-->
-      </div>
+      <div class="col-span-2"><!--spacer--></div>
       <div class="col-span-4">
         <img class="rounded-2xl" src="./cover.jpg" alt="">
       </div>
     </div>
   </div>
+</section>
+
+<section id="about" class="relative py-16 xl:py-28">
+  <div class="container mx-auto absolute top-0 bottom-0 left-0 right-0 z-0">
+    <div class="absolute top-0 bottom-0 left-auto right-0 bg-primary-50 w-screen"></div>
+  </div>
+  <div class="container relative mx-auto z-10">
+    <div class="grid grid-cols-12">
+      <div class="col-span-7">
+        <h2 class="font-heading font-bold text-3xl mb-4">Mam na imię Ania!</h2>
+        <p class="text-slate-700 text-lg mb-4">
+          Nazywam się Ania Wielanek i od 2015 roku pracuję jako fizjoterapeutka. Ukończyłam studia na Uniwersytecie Medycznym w Warszawie.
+          Doświadczenie zdobywam dzięki pracy z&nbsp;pacjentami w przychodni, domach pacjentów oraz u siebie.
+        </p>
+        <p class="text-slate-700 mb-4">
+          Największą motywacją dla mnie jest zadowolenie moich pacjentów.
+          Największą motywacją dla mnie jest zadowolenie moich pacjentów.
+          Największą motywacją dla mnie jest zadowolenie moich pacjentów.
+        </p>
+        <span class="font-handwriting text-slate-800 text-3xl">Ania Wielanek</span>
+      </div>
+      <div class="col-span-2"><!--spacer--></div>
+      <div class="col-span-3 flex items-center">
+        <div>
+          <article class="mb-8">
+            <div class="font-heading font-bold text-4xl font-bold text-primary-600 mb-1">7 lat</div>
+            <div class="font-heading font-semibold">doświadczenia</div>
+          </article>
+          <article class="mb-8">
+            <div class="font-heading font-bold text-4xl font-bold text-primary-600 mb-1">120+</div>
+            <div class="font-heading font-semibold">pacjentów</div>
+          </article>
+          <article>
+            <div class="font-heading font-bold text-4xl font-bold text-primary-600 mb-1">13</div>
+            <div class="font-heading font-semibold">kursów</div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 xl:py-28">
+  Lorem ipsum
 </section>
 
 <script src="./script.ts" type="module"></script>

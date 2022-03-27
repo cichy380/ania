@@ -14,6 +14,7 @@ module.exports = {
     fontFamily: {
       sans: ['"Roboto"', 'sans-serif'],
       heading: ['"Poppins"', 'sans-serif'],
+      handwriting: ['"Caveat"', 'sans-serif'],
     },
     extend: {
       colors: {
