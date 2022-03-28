@@ -22,6 +22,7 @@ module.exports = {
       },
       boxShadow: {
         light: '0 .5rem 1.5rem rgba(37, 39, 52, .05)',
+        lift: '0 .75rem 1.75rem rgba(37, 39, 52, .1)'
       }
     },
   },
