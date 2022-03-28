@@ -14,7 +14,7 @@ new Typed('#typed', options);
 
 const nav = document.getElementById('topbar');
 window.addEventListener('scroll',() => {
-  if(window.pageYOffset > 0) {
+  if(window.scrollY > 0) {
     nav && nav.classList.add('shadow-light');
   } else {
     nav && nav.classList.remove('shadow-light');
