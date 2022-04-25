@@ -1,12 +1,12 @@
 import Typed from 'typed.js';
 
 const options = {
-  strings: ['magistrem fizjoterapii', 'instruktorem wad postawy', 'Ania Wielanek'],
+  strings: ['magistrem fizjoterapii', 'instruktorem wad postawy', 'terapeutką PNF'],
   loop: true,
   typeSpeed: 40,
   startDelay: 0,
   backSpeed: 20,
-  backDelay: 3500,
+  backDelay: 2000,
   contentType: 'null',
 };
 

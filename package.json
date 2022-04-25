@@ -18,7 +18,7 @@
     "tailwindcss": "^3.0.23"
   },
   "scripts": {
-    "start": "npx parcel ./src/*.html",
+    "start": "npx parcel",
     "build": "npx parcel build"
   },
   "author": "",
