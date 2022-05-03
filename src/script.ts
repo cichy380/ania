@@ -1,4 +1,6 @@
 import Typed from 'typed.js';
+import tippy from 'tippy.js';
+import 'tippy.js/dist/tippy.css';
 
 const options = {
   strings: ['magistrem fizjoterapii', 'instruktorem wad postawy', 'terapeutką PNF'],
@@ -11,6 +13,7 @@ const options = {
 };
 
 new Typed('#typed', options);
+
 
 const topbar = document.getElementById('topbar');
 const topbarLogo = document.getElementById('topbar-logo');
@@ -27,3 +30,10 @@ window.addEventListener('scroll',() => {
     topbarLogo && topbarLogo.classList.add('py-3');
   }
 });
+
+
+tippy('#tooltip-pnf', {
+  content: 'proprioceptywne nerwowo-mięśniowe torowanie (ang. proprioceptive neuromuscular facilitation)',
+  placement: 'top',
+  arrow: true,
+})
