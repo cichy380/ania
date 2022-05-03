@@ -12,11 +12,18 @@ const options = {
 
 new Typed('#typed', options);
 
-const nav = document.getElementById('topbar');
+const topbar = document.getElementById('topbar');
+const topbarLogo = document.getElementById('topbar-logo');
 window.addEventListener('scroll',() => {
-  if(window.scrollY > 0) {
-    nav && nav.classList.add('shadow-light');
+  if(window.scrollY > 32) {
+    topbar && topbar.classList.add('shadow-light');
+    topbarLogo && topbarLogo.classList.add('scale-75');
+    topbarLogo && topbarLogo.classList.add('-translate-x-6');
+    topbarLogo && topbarLogo.classList.remove('py-3');
   } else {
-    nav && nav.classList.remove('shadow-light');
+    topbar && topbar.classList.remove('shadow-light');
+    topbarLogo && topbarLogo.classList.remove('scale-75');
+    topbarLogo && topbarLogo.classList.remove('-translate-x-6');
+    topbarLogo && topbarLogo.classList.add('py-3');
   }
 });
