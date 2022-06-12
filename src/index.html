@@ -27,7 +27,7 @@
   <!--  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">-->
 </head>
 <body class="overflow-x-hidden">
-<header id="topbar" class="flex items-center fixed z-50 w-full bg-white transition-shadow duration-300 px-6 py-2">
+<header id="topbar" class="flex items-center fixed z-30 w-full bg-white transition-shadow duration-300 px-6 py-2">
   <h1 id="topbar-logo" class="flex items-center py-3 transition-all">
     <svg xmlns="http://www.w3.org/2000/svg" width="62" height="66" viewBox="288 150 103 110" class="mr-2">
       <path
@@ -133,17 +133,13 @@
       <div class="col-span-7">
         <h2 class="font-heading font-bold text-3xl mb-4">Mam na imię Ania!</h2>
         <p class="text-slate-700 text-lg mb-4">
-          Nazywam się Anna Wielanek. Ukończyłam studia w 2015 i od tego czasu pracuję jako magister fizjoterapii.
+          Nazywam się Anna Wielanek. Ukończyłam studia w 2017 i od tego czasu pracuję jako magister fizjoterapii.
           Doświadczenie zdobywam dzięki pracy z&nbsp;pacjentami w poradniach, na&nbsp;wizytach rehabilitacji domowej oraz w&nbsp;prywatnym gabinecie.
         </p>
         <p class="text-slate-700 mb-4">
-          Jestem instruktorem wad postawy dzieci w wieku wczesnoszkolnym, szkolnym, młodzieży oraz dorosłych.
-          Odpowiednimi ćwiczeniami i pracą manualną można wpłynąć na występujące nieprawidłowości w postawie ciała oraz zapobiegać im poprzez edukację pacjenta.
-        </p>
-        <p class="text-slate-700 mb-4 hidden">
-          Największą motywacją dla mnie jest zadowolenie moich pacjentów.
-          Największą motywacją dla mnie jest zadowolenie moich pacjentów.
-          Największą motywacją dla mnie jest zadowolenie moich pacjentów.
+          Jestem instruktorem wad postawy dzieci w&nbsp;wieku wczesnoszkolnym, szkolnym, młodzieży oraz dorosłych.
+          Odpowiednimi ćwiczeniami i&nbsp;pracą manualną można wpłynąć na występujące nieprawidłowości w&nbsp;postawie ciała oraz zapobiegać im poprzez edukację
+          pacjenta.
         </p>
         <span class="font-handwriting text-slate-800 text-3xl">Ania Wielanek</span>
       </div>
@@ -159,8 +155,8 @@
             <div class="font-heading font-semibold">pacjentów</div>
           </article>
           <article>
-            <div class="font-heading font-bold text-4xl font-bold text-primary-600 mb-1">13</div>
-            <div class="font-heading font-semibold">dyplomów</div>
+            <div class="font-heading font-bold text-4xl font-bold text-primary-600 mb-1">23</div>
+            <div class="font-heading font-semibold">certyfikaty</div>
           </article>
         </div>
       </div>
@@ -180,54 +176,218 @@
       </p>
     </header>
 
-    <div class="grid grid-cols-3">
+    <div class="grid grid-cols-4 gap-8">
       <article>
-        <h3 class="font-heading font-bold text-2xl mb-10">Kursy</h3>
+        <h3 class="font-heading font-bold text-2xl mb-10">Kursy i szkolenia</h3>
 
         <ul class="mb-6">
           <li class="mb-4">
-            <strong class="font-heading font-semibold">Kinezjotaping podstawowy</strong>
-            <p class="text-slate-700">Kraków • maj 2017</p>
+            <strong class="font-heading font-semibold flex items-center">
+              PNF
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mx-1.5 opacity-50 tooltip-pnf" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+              </svg>
+              kurs podstawowy
+            </strong>
+            <p class="text-slate-700">Krynica Zdrój, 2022</p>
           </li>
           <li class="mb-4">
-            <strong class="font-heading font-semibold">PNF w Ortopedii</strong>
-            <p class="text-slate-700">Grodzisk Mazowiecki • mar 2015</p>
+            <strong class="font-heading font-semibold">Dry Needling – igłoterapia</strong>
+            <p class="text-slate-700">Warszawa, 2022</p>
           </li>
           <li class="mb-4">
-            <strong class="font-heading font-semibold">Funkcjonalna terapia powięziowa</strong>
-            <p class="text-slate-700">Warszawa • wrz 2019</p>
+            <strong class="font-heading font-semibold">Kompleksowa terapia powięzi</strong>
+            <p class="text-slate-700">Warszawa, 2022</p>
+          </li>
+          <li class="mb-4">
+            <strong class="font-heading font-semibold">Skoliozy – diagnostyka i&nbsp;postępowanie fizjoterapeutyczne</strong>
+            <p class="text-slate-700">Warszawa, 2022</p>
+          </li>
+          <li class="mb-4">
+            <strong class="font-heading font-semibold">
+              Dobór i wykonanie wkładek ortopedycznych – System Balkefors
+            </strong>
+            <p class="text-slate-700">Warszawa, 2021</p>
           </li>
         </ul>
 
-        <a href="#"
+        <button type="button" data-a11y-dialog-show="dialog-skills"
            class="inline-block rounded bg-primary-50 font-heading text-sm font-medium text-primary-600 hover:bg-primary-100 hover:text-primary-700 transition py-2.5 px-4">
           Pokaż więcej
-        </a>
+        </button>
+
+        <div
+          class="dialog dialog-container flex fixed overflow-auto z-40"
+          id="dialog-skills"
+          aria-hidden="true"
+          aria-labelledby="my-dialog-title"
+          aria-describedby="my-dialog-description"
+        >
+          <div class="dialog-overlay" data-a11y-dialog-hide></div>
+          <article class="dialog-content w-[1440px]" role="document">
+            <button
+              data-a11y-dialog-hide
+              class="dialog-close"
+              aria-label="Close this dialog window"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+              </svg>
+            </button>
+
+            <h4 class="font-heading font-bold text-2xl mb-10" id="my-dialog-title">Kursy i szkolenia</h4>
+
+            <div class="grid grid-cols-3 gap-8" id="my-dialog-description">
+              <ul class="mb-6">
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold flex items-center">
+                    PNF
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mx-1.5 opacity-50 tooltip-pnf" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                    kurs podstawowy
+                  </strong>
+                  <p class="text-slate-700">Krynica Zdrój, 2022</p>
+                </li>
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold">Dry Needling – igłoterapia</strong>
+                  <p class="text-slate-700">Warszawa, 2022</p>
+                </li>
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold">Kompleksowa terapia powięzi</strong>
+                  <p class="text-slate-700">Warszawa, 2022</p>
+                </li>
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold">Skoliozy – diagnostyka i&nbsp;postępowanie fizjoterapeutyczne</strong>
+                  <p class="text-slate-700">Warszawa, 2022</p>
+                </li>
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold">
+                    Praca z Tkanką Łączną w Terapii Blizn
+                  </strong>
+                  <p class="text-slate-700">2022</p>
+                </li>
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold">
+                    Wczesna diagnostyka i terapia chorób zwyrodnieniowych młodych osób
+                  </strong>
+                  <p class="text-slate-700">2022</p>
+                </li>
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold">
+                    Najskuteczniejsze testy kliniczne w fizjoterapii
+                  </strong>
+                  <p class="text-slate-700">2022</p>
+                </li>
+              </ul>
+
+              <ul class="mb-6">
+
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold">
+                    Instruktor Rekreacji Ruchowej – Nordic Walking
+                  </strong>
+                  <p class="text-slate-700">Leszno, 2021</p>
+                </li>
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold">
+                    Dobór i wykonanie wkładek ortopedycznych – System Balkefors
+                  </strong>
+                  <p class="text-slate-700">Warszawa, 2021</p>
+                </li>
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold">Kompleksowa Terapia Przeciwobrzękowa i Powięziowa</strong>
+                  <p class="text-slate-700">Łódź, 2020</p>
+                </li>
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold">Kobido – Japoński Lifting Twarzy</strong>
+                  <p class="text-slate-700">Warszawa, 2020</p>
+                </li>
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold">Kinezjotaping</strong>
+                  <p class="text-slate-700">Bydgoszcz, 2019</p>
+                </li>
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold">Neurorozwojowa diagnostyka i rehabilitacja dzieci</strong>
+                  <p class="text-slate-700">Wrocław, 2018</p>
+                </li>
+              </ul>
+
+              <ul class="mb-6">
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold">
+                    Terapia ręki jako element w pracy z dziećmi z zaburzeniami neurorozwojowymi oraz dziećmi z problemami szkolnymi
+                  </strong>
+                  <p class="text-slate-700">Łódź, 2018</p>
+                </li>
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold">Instruktorski kurs korektywy i&nbsp;kompensacji wad postawy ciała</strong>
+                  <p class="text-slate-700">Warszawa, 2018</p>
+                </li>
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold">Masaż klasyczny i sportowy</strong>
+                  <p class="text-slate-700">Łódź, 2016</p>
+                </li>
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold">Diagnostyka i leczenie manualne w dysfunkcjach stawu kolanowego</strong>
+                  <p class="text-slate-700">Łódź, 2014</p>
+                </li>
+                <li class="mb-4">
+                  <strong class="font-heading font-semibold">Badanie i fizjoterapia funkcjonalna w uszkodzeniach stawu barkowego</strong>
+                  <p class="text-slate-700">Kraków, 2014</p>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
       </article>
 
       <article>
-        <h3 class="font-heading font-bold text-2xl mb-10">Szkolenia</h3>
+        <div class="font-heading font-bold text-2xl mb-10 invisible">&nbsp;</div>
 
         <ul class="mb-6">
           <li class="mb-4">
-            <strong class="font-heading font-semibold">Terapia powięziowa</strong>
-            <p class="text-slate-700">Warszawa, maj 2019</p>
+            <strong class="font-heading font-semibold">Kompleksowa Terapia Przeciwobrzękowa i Powięziowa</strong>
+            <p class="text-slate-700">Łódź, 2020</p>
+          </li>
+          <li class="mb-4">
+            <strong class="font-heading font-semibold">Kobido – Japoński Lifting Twarzy</strong>
+            <p class="text-slate-700">Warszawa, 2020</p>
           </li>
           <li class="mb-4">
             <strong class="font-heading font-semibold">Kinezjotaping</strong>
-            <p class="text-slate-700">Kraków, mar 2017</p>
+            <p class="text-slate-700">Bydgoszcz, 2019</p>
           </li>
           <li class="mb-4">
-            <strong class="font-heading font-semibold">PNF w Ortopedii Dzieci</strong>
-            <p class="text-slate-700">Grodzisk Mazowiecki, wrz 2015</p>
+            <strong class="font-heading font-semibold">Instruktorski kurs korektywy i&nbsp;kompensacji wad postawy ciała</strong>
+            <p class="text-slate-700">Warszawa, 2018</p>
+          </li>
+          <li class="mb-4">
+            <strong class="font-heading font-semibold">Masaż klasyczny i sportowy</strong>
+            <p class="text-slate-700">Łódź, 2016</p>
           </li>
         </ul>
+      </article>
 
-        <a
-          href="#"
-          class="inline-block rounded bg-primary-50 text-primary-600 hover:bg-primary-100 hover:text-primary-700 transition text-sm font-medium py-2.5 px-4">
-          Pokaż więcej
-        </a>
+      <article>
+        <h3 class="font-heading font-bold text-2xl mb-10">Warsztaty</h3>
+
+        <ul class="mb-6">
+          <li class="mb-4">
+            <strong class="font-heading font-semibold">Rozejście mięśnia prostego brzucha w&nbsp;ciąży i&nbsp;po porodzie</strong>
+            <p class="text-slate-700">Łódź, 2020</p>
+          </li>
+          <li class="mb-4">
+            <strong class="font-heading font-semibold">Techniki pracy tkanek miękkich w&nbsp;terapii blizn</strong>
+            <p class="text-slate-700">Łódź, 2018</p>
+          </li>
+          <li class="mb-4">
+            <strong class="font-heading font-semibold">Techniki prawidłowego rolowania</strong>
+            <p class="text-slate-700">Gdańsk, 2018</p>
+          </li>
+        </ul>
       </article>
 
       <article>
@@ -235,23 +395,22 @@
 
         <ul class="mb-6">
           <li class="mb-4">
-            <strong class="font-heading font-semibold">PNF w Ortopedii</strong>
-            <p class="text-slate-700">Grodzisk Mazowiecki, 2015</p>
+            <strong class="font-heading font-semibold">Dolegliwości bólowe narządu ruchu prowokowane wadami stóp</strong>
+            <p class="text-slate-700">2022</p>
           </li>
           <li class="mb-4">
-            <strong class="font-heading font-semibold">Funkcjonalna terapia powięziowa</strong>
-            <p class="text-slate-700">Warszawa, 2019</p>
+            <strong class="font-heading font-semibold">Nowe hortyzonty leczenia choroby zwyrodnieniowej stawów. Leczenie patologii barku</strong>
+            <p class="text-slate-700">Łódź, 2019</p>
           </li>
           <li class="mb-4">
-            <strong class="font-heading font-semibold">Kinezjotaping podstawowy</strong>
-            <p class="text-slate-700">Kraków, 2017</p>
+            <strong class="font-heading font-semibold">Patologia i leczenie choroby zwyrodnieniowej kończyny górnej</strong>
+            <p class="text-slate-700">Łódź, 2018</p>
+          </li>
+          <li class="mb-4">
+            <strong class="font-heading font-semibold">Postępowanie terapeutyczne w chorobie zwyrodnieniowej stawów -&nbsp;teraźniejszość i przeszłość</strong>
+            <p class="text-slate-700">Łódź, 2018</p>
           </li>
         </ul>
-
-        <a href="#"
-           class="inline-block rounded bg-primary-50 text-primary-600 hover:bg-primary-100 hover:text-primary-700 transition text-sm font-medium py-2.5 px-4">
-          Pokaż więcej
-        </a>
       </article>
     </div>
   </div>
@@ -323,7 +482,7 @@
             <div class="w-2 h-8 bg-indigo-500 mr-8"></div>
             <h3 class="font-heading font-bold flex items-center">
               Terapia PNF
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ml-1.5 opacity-50" viewBox="0 0 16 16" id="tooltip-pnf">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ml-1.5 opacity-50 tooltip-pnf" viewBox="0 0 16 16">
                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                 <path
                   d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
@@ -369,8 +528,8 @@
             i przyspiesza gojenie ran pooperacyjnych.
 
 
-<!--            <span class="opacity-30">Jest sporo technik aplikacji kinezjotapingu.</span> W&nbsp;wyniku badania-->
-<!--            i&nbsp;wywiadu pacjenta dobieram technikę aplikacji. Należy pamiętać, że jest to metoda wyłącznie wspomagającą proces leczenia.-->
+            <!--            <span class="opacity-30">Jest sporo technik aplikacji kinezjotapingu.</span> W&nbsp;wyniku badania-->
+            <!--            i&nbsp;wywiadu pacjenta dobieram technikę aplikacji. Należy pamiętać, że jest to metoda wyłącznie wspomagającą proces leczenia.-->
           </p>
         </article>
 

@@ -1,6 +1,8 @@
 import Typed from 'typed.js';
+import A11yDialog from 'a11y-dialog'
 import tippy from 'tippy.js';
 import 'tippy.js/dist/tippy.css';
+import scrollLock from './scroll-lock';
 
 const options = {
   strings: ['magistrem fizjoterapii', 'instruktorem wad postawy', 'terapeutką PNF'],
@@ -32,7 +34,19 @@ window.addEventListener('scroll',() => {
 });
 
 
-tippy('#tooltip-pnf', {
+const container = document.querySelector('.dialog');
+const dialog = new A11yDialog(container as Element);
+dialog.on('show', (_, __) => {
+  // document.body.setAttribute('style','overflow:hidden');
+  scrollLock.disablePageScroll();
+});
+dialog.on('hide', (_, __) => {
+  // document.body.removeAttribute('style');
+  scrollLock.enablePageScroll();
+})
+
+
+tippy('.tooltip-pnf', {
   content: 'proprioceptywne nerwowo-mięśniowe torowanie (ang. proprioceptive neuromuscular facilitation)',
   placement: 'top',
   arrow: true,
