@@ -39,13 +39,12 @@
   </h1>
   <nav class="grow">
     <ul class="flex justify-end">
-      <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#">Home</a></li>
-      <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#">O mnie</a></li>
-      <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#">Umiejętności</a></li>
-      <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#">Oferta</a></li>
-      <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#">Galeria</a></li>
-      <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#">Czytelnia</a></li>
-      <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#">Kontakt</a></li>
+      <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#o-mnie">O mnie</a></li>
+      <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#umiejetnosci">Umiejętności</a></li>
+      <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#oferta">Oferta</a></li>
+      <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#galeria">Galeria</a></li>
+      <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#czytelnia">Czytelnia</a></li>
+      <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#kontakt">Kontakt</a></li>
     </ul>
   </nav>
   <!--  <span class="ml-10 mr-12 text-xl opacity-25">|</span>-->
@@ -95,7 +94,7 @@
             na aparacie ruchu. Kluczowe są relacja z osobą, której mam pomóc, poznanie jej potrzeb oraz emocje
             toważyszące zabiegom.
           </p>
-          <a href="#" class="inline-block rounded bg-primary-600 font-heading text-sm font-medium text-white hover:bg-primary-700 transition py-2.5 px-4">
+          <a href="#oferta" class="inline-block rounded bg-primary-600 font-heading text-sm font-medium text-white hover:bg-primary-700 transition py-2.5 px-4">
             Zakres usług
           </a>
 
@@ -124,7 +123,8 @@
   </div>
 </section>
 
-<section id="about" class="relative py-16 xl:py-28">
+<div id="o-mnie" class="relative bottom-[82px]"></div>
+<section class="relative py-16 xl:py-28">
   <div class="container mx-auto absolute top-0 bottom-0 left-0 right-0 z-0">
     <div class="absolute top-0 bottom-0 left-auto right-0 bg-gray-50 rounded-2xl w-screen"></div>
   </div>
@@ -164,7 +164,8 @@
   </div>
 </section>
 
-<section id="skills" class="py-16 xl:py-28">
+<div id="umiejetnosci" class="relative bottom-[82px]"></div>
+<section class="py-16 xl:py-28">
   <div class="container mx-auto">
     <header class="text-center mb-20">
       <h2 class="font-heading font-bold text-3xl mb-3">Umiejętności</h2>
@@ -225,7 +226,7 @@
           aria-describedby="my-dialog-description"
         >
           <div class="dialog-overlay" data-a11y-dialog-hide></div>
-          <article class="dialog-content w-[1440px]" role="document">
+          <article class="dialog-content p-10 rounded w-[1440px]" role="document">
             <button
               data-a11y-dialog-hide
               class="dialog-close"
@@ -239,7 +240,7 @@
             <h4 class="font-heading font-bold text-2xl mb-10" id="my-dialog-title">Kursy i szkolenia</h4>
 
             <div class="grid grid-cols-3 gap-8" id="my-dialog-description">
-              <ul class="mb-6">
+              <ul>
                 <li class="mb-4">
                   <strong class="font-heading font-semibold flex items-center">
                     PNF
@@ -275,7 +276,7 @@
                   </strong>
                   <p class="text-slate-700">2022</p>
                 </li>
-                <li class="mb-4">
+                <li>
                   <strong class="font-heading font-semibold">
                     Najskuteczniejsze testy kliniczne w fizjoterapii
                   </strong>
@@ -283,8 +284,7 @@
                 </li>
               </ul>
 
-              <ul class="mb-6">
-
+              <ul>
                 <li class="mb-4">
                   <strong class="font-heading font-semibold">
                     Instruktor Rekreacji Ruchowej – Nordic Walking
@@ -309,13 +309,13 @@
                   <strong class="font-heading font-semibold">Kinezjotaping</strong>
                   <p class="text-slate-700">Bydgoszcz, 2019</p>
                 </li>
-                <li class="mb-4">
+                <li>
                   <strong class="font-heading font-semibold">Neurorozwojowa diagnostyka i rehabilitacja dzieci</strong>
                   <p class="text-slate-700">Wrocław, 2018</p>
                 </li>
               </ul>
 
-              <ul class="mb-6">
+              <ul>
                 <li class="mb-4">
                   <strong class="font-heading font-semibold">
                     Terapia ręki jako element w pracy z dziećmi z zaburzeniami neurorozwojowymi oraz dziećmi z problemami szkolnymi
@@ -334,7 +334,7 @@
                   <strong class="font-heading font-semibold">Diagnostyka i leczenie manualne w dysfunkcjach stawu kolanowego</strong>
                   <p class="text-slate-700">Łódź, 2014</p>
                 </li>
-                <li class="mb-4">
+                <li>
                   <strong class="font-heading font-semibold">Badanie i fizjoterapia funkcjonalna w uszkodzeniach stawu barkowego</strong>
                   <p class="text-slate-700">Kraków, 2014</p>
                 </li>
@@ -416,7 +416,8 @@
   </div>
 </section>
 
-<section id="services" class="pt-16 xl:pt-28 bg-gray-50">
+<div id="oferta" class="relative bottom-[82px]"></div>
+<section class="pt-16 xl:pt-28 bg-gray-50">
   <div class="container mx-auto">
     <header class="text-center mb-20">
       <h2 class="font-heading font-bold text-3xl mb-3">Oferta</h2>
@@ -548,7 +549,8 @@
   </div>
 </section>
 
-<section id="gallery" class="py-16 xl:py-28">
+<div id="galeria"></div>
+<section class="py-16 xl:py-28">
   <div class="container mx-auto pt-16 xl:pt-20">
     <header class="text-center mb-20">
       <h2 class="font-heading font-bold text-3xl mb-3">Galeria</h2>
@@ -586,7 +588,8 @@
   </div>
 </section>
 
-<section id="blog" class="relative py-16 xl:py-28 -mb-16 xl:-mb-28 z-20">
+<div id="czytelnia" class="relative bottom-[82px]"></div>
+<section class="relative py-16 xl:py-28 -mb-16 xl:-mb-28 z-20">
   <div class="container mx-auto absolute top-0 bottom-0 left-0 right-0 ml-0 xl:mx-auto z-0">
     <div class="absolute top-0 bottom-0 left-0 right-0 xl:-ml-28 bg-gray-50 rounded-2xl w-screen"></div>
   </div>
@@ -624,7 +627,8 @@
   </div>
 </section>
 
-<section id="contact" class="relative bg-primary-600 text-white pb-16 xl:pb-28 pt-32 xl:pt-56">
+<div id="kontakt" class="relative bottom-[82px]"></div>
+<section class="relative bg-primary-600 text-white pb-16 xl:pb-28 pt-32 xl:pt-56">
   <!--  <div class="container mx-auto absolute top-0 bottom-0 left-0 right-0 ml-0 xl:mx-auto z-0">-->
   <!--    <div class="absolute top-0 bottom-0 left-0 right-0 xl:-ml-28 bg-gray-50 rounded-2xl w-screen"></div>-->
   <!--  </div>-->

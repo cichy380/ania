@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body, html {
   height: 100%;
 }
@@ -33,15 +37,7 @@ body, html {
   z-index: 2;
   position: relative;
   animation: fade-in 400ms 200ms both, slide-up 400ms 200ms both;
-  padding: 1em;
   max-width: 90%;
-  border-radius: 2px;
-}
-
-@media screen and (min-width: 700px) {
-  .dialog-content {
-    padding: 2em;
-  }
 }
 
 @keyframes fade-in {
