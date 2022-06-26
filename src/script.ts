@@ -22,14 +22,14 @@ const topbarLogo = document.getElementById('topbar-logo');
 window.addEventListener('scroll',() => {
   if(window.scrollY > 32) {
     topbar && topbar.classList.add('shadow-light');
-    topbarLogo && topbarLogo.classList.add('scale-75');
-    topbarLogo && topbarLogo.classList.add('-translate-x-6');
-    topbarLogo && topbarLogo.classList.remove('py-3');
+    topbarLogo && topbarLogo.classList.add('lg:scale-75');
+    topbarLogo && topbarLogo.classList.add('lg:-translate-x-6');
+    topbarLogo && topbarLogo.classList.remove('lg:py-3');
   } else {
     topbar && topbar.classList.remove('shadow-light');
-    topbarLogo && topbarLogo.classList.remove('scale-75');
-    topbarLogo && topbarLogo.classList.remove('-translate-x-6');
-    topbarLogo && topbarLogo.classList.add('py-3');
+    topbarLogo && topbarLogo.classList.remove('lg:scale-75');
+    topbarLogo && topbarLogo.classList.remove('lg:-translate-x-6');
+    topbarLogo && topbarLogo.classList.add('lg:py-3');
   }
 });
 
