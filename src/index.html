@@ -22,9 +22,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
-  <!--  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">-->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="overflow-x-hidden">
 <header id="topbar" class="flex items-center fixed z-30 w-full bg-white transition-shadow duration-300 px-6 py-2">
@@ -38,7 +36,7 @@
     <span class="font-handwriting text-4xl font-light">Kinezy-Med</span>
   </h1>
   <nav class="grow">
-    <ul class="flex justify-end">
+    <ul class="hidden lg:flex justify-end">
       <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#o-mnie">O mnie</a></li>
       <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#umiejetnosci">Umiejętności</a></li>
       <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#oferta">Oferta</a></li>
@@ -46,27 +44,16 @@
       <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#czytelnia">Czytelnia</a></li>
       <li class="inline-block"><a class="hover:text-primary-600 transition-colors p-1 mx-3" href="#kontakt">Kontakt</a></li>
     </ul>
+    <div class="flex lg:hidden justify-end">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16" class="cursor-pointer">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      </svg>
+    </div>
   </nav>
-  <!--  <span class="ml-10 mr-12 text-xl opacity-25">|</span>-->
-  <!--  <a class="flex items-center" href="#">-->
-  <!--    <div class="bg-green-50 text-green-700 rounded-full p-2">-->
-  <!--      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">-->
-  <!--        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>-->
-  <!--      </svg>-->
-  <!--    </div>-->
-  <!--    <span class="text-sm ml-2">721 645 234</span>-->
-  <!--  </a>-->
-
-  <!--  <a class="flex items-center rounded bg-primary-50 text-primary-600 hover:bg-green-100 hover:text-green-700 py-2.5 px-4 ml-4" href="#">-->
-  <!--    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">-->
-  <!--      <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>-->
-  <!--    </svg>-->
-  <!--    <span class="text-sm ml-2.5">721 645 234</span>-->
-  <!--  </a>-->
 </header>
 
 <section id="cover" class="relative py-16 xl:py-28">
-  <div class="container mx-auto absolute top-0 bottom-0 left-0 right-0 mt-16 xl:mt-28 hidden lg:block z-0">
+  <div class="container mx-auto absolute top-0 bottom-0 left-0 right-0 mt-16 lg:mt-28 hidden lg:block z-0">
     <div class="grid grid-cols-12 absolute top-0 bottom-0 left-0 right-0">
       <div class="col-span-9"></div>
       <div class="col-span-3 relative">
@@ -74,49 +61,33 @@
       </div>
     </div>
   </div>
-  <div class="w-full absolute top-0 bottom-0 left-0 right-0 mt-16 xl:mt-28 hidden lg:block z-0">
+  <div class="w-full absolute top-0 bottom-0 left-0 right-0 mt-16 lg:mt-28 hidden lg:block z-0">
     <div class="grid grid-cols-12 absolute top-0 bottom-0 left-0 right-0">
       <div class="col-span-9"></div>
       <div class="col-span-3 relative">
-        <div class="absolute top-0 bottom-0 left-0 right-0 bg-primary-600 -mb-16 xl:-mb-28"></div>
+        <div class="absolute top-0 bottom-0 left-4 right-0 bg-primary-600 -mb-16 xl:-mb-28"></div>
       </div>
     </div>
   </div>
-  <div class="container relative mx-auto py-16 xl:py-28 z-10">
+  <div class="container relative mx-auto px-6 py-16 xl:py-28 z-10">
     <div class="grid grid-cols-12">
-      <div class="col-span-6 flex items-center">
-        <article>
-          <div class="font-heading font-bold text-xl mb-6">Witam</div>
-          <div class="font-heading font-bold text-3xl mb-6">Jestem <span id="typed"></span></div>
-          <p class="text-slate-700 leading-7 mb-8">
-            Mam <strong class="text-slate-900">7 lat</strong> doświadczenia w pracy z pacjentami, podczas których nauczyłam się, że nie mogę skupiać się
+      <div class="col-span-10 lg:col-span-7 xl:col-span-6 col-start-2 lg:col-start-auto flex items-center">
+        <article class="text-center lg:text-left">
+          <div class="font-heading font-bold sm:text-xl mb-6">Witam</div>
+          <div class="font-heading font-bold text-xl sm:text-2xl md:text-3xl mb-6 min-h-[56px] sm:min-h-min">Jestem <span id="typed"></span></div>
+          <p class="text-slate-700 leading-7 mb-8 lg:mr-3 lg:mr-0">
+            Mam <strong class="text-slate-900">7 lat</strong> doświadczenia w&nbsp;pracy z&nbsp;pacjentami, podczas których nauczyłam się, że nie mogę skupiać się
             wyłacznie
-            na aparacie ruchu. Kluczowe są relacja z osobą, której mam pomóc, poznanie jej potrzeb oraz emocje
+            na aparacie ruchu. Kluczowe są relacja z&nbsp;osobą, której mam pomóc, poznanie jej potrzeb oraz emocje
             toważyszące zabiegom.
           </p>
           <a href="#oferta" class="inline-block rounded bg-primary-600 font-heading text-sm font-medium text-white hover:bg-primary-700 transition py-2.5 px-4">
             Zakres usług
           </a>
-
-          <!--          <a href="#" class="inline-block rounded bg-primary-600 text-sm font-medium text-white hover:bg-primary-700 transition py-2.5 px-4">-->
-          <!--            Zakres usług-->
-          <!--          </a>-->
-          <!--          <p class="flex items-center">-->
-          <!--            <a href="#" class="inline-block rounded bg-primary-600 text-primary-50 hover:bg-primary-700 transition text-sm font-medium py-2.5 px-4">-->
-          <!--              Więcej o mnie-->
-          <!--            </a>-->
-
-          <!--            <a class="inline-flex items-center rounded bg-primary-50 text-primary-600 hover:bg-green-50 hover:text-green-600 transition py-2.5 px-4 ml-4" href="#">-->
-          <!--              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">-->
-          <!--                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>-->
-          <!--              </svg>-->
-          <!--              <span class="text-sm font-medium ml-2.5">721 645 234</span>-->
-          <!--            </a>-->
-          <!--          </p>-->
         </article>
       </div>
-      <div class="col-span-2"><!--spacer--></div>
-      <div class="col-span-4">
+      <div class="hidden lg:block lg:col-span-1 xl:col-span-2 bg-red-200 md:bg-orange-500 lg:bg-purple-600 xl:bg-red-700"><!--spacer--></div>
+      <div class="col-span-10 sm:col-span-6 lg:col-span-4 col-start-2 sm:col-start-4 lg:col-start-auto pt-12 lg:pt-0 flex items-center">
         <img class="rounded-2xl" src="./cover.jpg" alt="">
       </div>
     </div>
@@ -124,7 +95,7 @@
 </section>
 
 <div id="o-mnie" class="relative bottom-[82px]"></div>
-<section class="relative py-16 xl:py-28">
+<section class="hidden relative py-16 xl:py-28">
   <div class="container mx-auto absolute top-0 bottom-0 left-0 right-0 z-0">
     <div class="absolute top-0 bottom-0 left-auto right-0 bg-gray-50 rounded-2xl w-screen"></div>
   </div>
@@ -165,7 +136,7 @@
 </section>
 
 <div id="umiejetnosci" class="relative bottom-[82px]"></div>
-<section class="py-16 xl:py-28">
+<section class="hidden py-16 xl:py-28">
   <div class="container mx-auto">
     <header class="text-center mb-20">
       <h2 class="font-heading font-bold text-3xl mb-3">Umiejętności</h2>
@@ -417,7 +388,7 @@
 </section>
 
 <div id="oferta" class="relative bottom-[82px]"></div>
-<section class="pt-16 xl:pt-28 bg-gray-50">
+<section class="hidden pt-16 xl:pt-28 bg-gray-50">
   <div class="container mx-auto">
     <header class="text-center mb-20">
       <h2 class="font-heading font-bold text-3xl mb-3">Oferta</h2>
@@ -550,7 +521,7 @@
 </section>
 
 <div id="galeria"></div>
-<section class="py-16 xl:py-28">
+<section class="hidden py-16 xl:py-28">
   <div class="container mx-auto pt-16 xl:pt-20">
     <header class="text-center mb-20">
       <h2 class="font-heading font-bold text-3xl mb-3">Galeria</h2>
@@ -589,7 +560,7 @@
 </section>
 
 <div id="czytelnia" class="relative bottom-[82px]"></div>
-<section class="relative py-16 xl:py-28 -mb-16 xl:-mb-28 z-20">
+<section class="hidden relative py-16 xl:py-28 -mb-16 xl:-mb-28 z-20">
   <div class="container mx-auto absolute top-0 bottom-0 left-0 right-0 ml-0 xl:mx-auto z-0">
     <div class="absolute top-0 bottom-0 left-0 right-0 xl:-ml-28 bg-gray-50 rounded-2xl w-screen"></div>
   </div>
@@ -628,7 +599,7 @@
 </section>
 
 <div id="kontakt" class="relative bottom-[82px]"></div>
-<section class="relative bg-primary-600 text-white pb-16 xl:pb-28 pt-32 xl:pt-56">
+<section class="hidden relative bg-primary-600 text-white pb-16 xl:pb-28 pt-32 xl:pt-56">
   <!--  <div class="container mx-auto absolute top-0 bottom-0 left-0 right-0 ml-0 xl:mx-auto z-0">-->
   <!--    <div class="absolute top-0 bottom-0 left-0 right-0 xl:-ml-28 bg-gray-50 rounded-2xl w-screen"></div>-->
   <!--  </div>-->
