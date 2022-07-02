@@ -61,10 +61,10 @@ function closeMobileSidebar() {
 const container = document.querySelector('.dialog');
 const dialog = new A11yDialog(container as Element);
 dialog.on('show', (_, __) => {
-  scrollLock.disablePageScroll();
+  // scrollLock.disablePageScroll(document.body);
 });
 dialog.on('hide', (_, __) => {
-  scrollLock.enablePageScroll();
+  // scrollLock.enablePageScroll(document.body);
 })
 
 
