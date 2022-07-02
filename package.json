@@ -22,7 +22,8 @@
   },
   "scripts": {
     "start": "npx parcel ./src/*.html",
-    "build": "npx parcel build ./src/*.html"
+    "build": "npx parcel build ./src/*.html",
+    "build-github-pages": "npx parcel build ./src/*.html --public-url https://cichy380.github.io/ania/"
   },
   "author": "",
   "license": "ISC"
