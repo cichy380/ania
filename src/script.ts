@@ -34,14 +34,36 @@ window.addEventListener('scroll',() => {
 });
 
 
+const mobileSidebarOpenButton = document.getElementById('mobile-sidebar-open-button');
+const mobileSidebarCloseButton = document.getElementById('mobile-sidebar-close-button');
+const mobileSidebar = document.getElementById('mobile-sidebar');
+const mobileSidebarContent = document.getElementById('mobile-sidebar-content');
+const mobileSidebarLinks = document.querySelectorAll('#mobile-sidebar-content a');
+mobileSidebarOpenButton && mobileSidebarOpenButton.addEventListener('click', () => openMobileSidebar());
+mobileSidebarCloseButton && mobileSidebarCloseButton.addEventListener('click', () => closeMobileSidebar());
+mobileSidebarLinks.forEach((link) => link.addEventListener('click', () => closeMobileSidebar()));
+
+function openMobileSidebar() {
+  mobileSidebar && mobileSidebar.classList.remove('hidden');
+  setTimeout(() => mobileSidebar && mobileSidebar.classList.add('opacity-100'));
+  setTimeout(() => mobileSidebarContent && mobileSidebarContent.classList.add('translate-x-0'), 150);
+  scrollLock.disablePageScroll();
+}
+
+function closeMobileSidebar() {
+  mobileSidebarContent && mobileSidebarContent.classList.remove('translate-x-0')
+  setTimeout(() => mobileSidebar && mobileSidebar.classList.remove('opacity-100'), 150);
+  setTimeout(() => mobileSidebar && mobileSidebar.classList.add('hidden'), 300);
+  scrollLock.enablePageScroll();
+}
+
+
 const container = document.querySelector('.dialog');
 const dialog = new A11yDialog(container as Element);
 dialog.on('show', (_, __) => {
-  // document.body.setAttribute('style','overflow:hidden');
   scrollLock.disablePageScroll();
 });
 dialog.on('hide', (_, __) => {
-  // document.body.removeAttribute('style');
   scrollLock.enablePageScroll();
 })
 
