@@ -600,22 +600,22 @@
 </section>
 
 <div id="kontakt" class="relative bottom-[82px]"></div>
-<section class="hidden relative bg-primary-600 text-white pb-16 xl:pb-28 pt-32 xl:pt-56">
+<section class="relative bg-primary-600 text-white pb-16 xl:pb-28 pt-32 xl:pt-56">
   <!--  <div class="container mx-auto absolute top-0 bottom-0 left-0 right-0 ml-0 xl:mx-auto z-0">-->
   <!--    <div class="absolute top-0 bottom-0 left-0 right-0 xl:-ml-28 bg-gray-50 rounded-2xl w-screen"></div>-->
   <!--  </div>-->
 
-  <div class="container mx-auto relative z-10">
+  <div class="container mx-auto px-6 relative z-10">
     <header class="text-center mb-20">
       <h2 class="font-heading font-bold text-3xl mb-3">Kontakt</h2>
-      <p class="text-slate-100 mx-28">
+      <p class="text-slate-100 sm:mx-12 xl:mx-28">
         Chcesz wiedzieć więcej na temat oferowanych przeze mnie usług? Zapraszam do kontatku, podczas którego możemy umówić się na konsultacje.
-        Jestem w stanie dostosować się do Państwa odnośnie godzin i miejsca wizyt.
+        Jestem w stanie dostosować się do Państwa odnośnie godzin i miejsca wizyty.
       </p>
     </header>
 
-    <div class="grid grid-cols-4 gap-8">
-      <div class="text-center">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <a href="tel:+48721645234" class="text-center py-2 rounded bg-primary-600 hover:bg-primary-700/30 transition-colors">
         <div class="mb-5 flex justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
             <path
@@ -623,11 +623,11 @@
           </svg>
         </div>
         <p class="font-heading mb-2">Telefon</p>
-        <p class="text-slate-300 mb-2">Jeżeli masz pytania <br> dzwoń śmiało</p>
+        <p class="text-slate-300 mb-2">Jeżeli masz pytania<span class=""><br> dzwoń śmiało</span></p>
         <p>721 645 234</p>
-      </div>
+      </a>
 
-      <div class="text-center">
+      <a href="https://fb.me/kinezymed" target="_blank" class="text-center py-2 rounded bg-primary-600 hover:bg-primary-700/30 transition-colors">
         <div class="mb-5 flex justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
             <path
@@ -635,11 +635,11 @@
           </svg>
         </div>
         <p class="font-heading mb-2">Facebook</p>
-        <p class="text-slate-300 mb-2">Polub mój profil aby <br> być na bieżąco</p>
-        <p>fb.com/kinezymed</p>
-      </div>
+        <p class="text-slate-300 mb-2">Polub mój profil, aby <br class="hidden sm:block"> być na bieżąco</p>
+        <p>fb.me/kinezymed</p>
+      </a>
 
-      <div class="text-center">
+      <a href="mailto:ania@kinezy-med.pl" class="text-center py-2 rounded bg-primary-600 hover:bg-primary-700/30 transition-colors">
         <div class="mb-5 flex justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
             <path
@@ -647,11 +647,14 @@
           </svg>
         </div>
         <p class="font-heading mb-2">Email</p>
-        <p class="text-slate-300 mb-2">Potrzebujesz przesłać <br> jakieś materiały?</p>
-        <p>ania@kinezy.pl</p>
-      </div>
+        <p class="text-slate-300 mb-2">
+          Potrzebujesz <span class="hidden md:inline lg:hidden">coś</span> przesłać<span class="hidden md:inline lg:hidden">?</span>
+          <span class="inline md:hidden lg:inline"><br>jakieś materiały?</span>
+        </p>
+        <p>ania@kinezy-med.pl</p>
+      </a>
 
-      <div class="text-center">
+      <a href="https://goo.gl/maps/2pFGhxurzDA5KDUaA" target="_blank" class="text-center py-2 rounded bg-primary-600 hover:bg-primary-700/30 transition-colors">
         <div class="mb-5 flex justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
             <path
@@ -662,7 +665,7 @@
         <p class="font-heading mb-2">Adres</p>
         <p class="text-slate-300 mb-2">95-030 Czyżeminek <br> ul. Wspólna 3</p>
         <p>znajdź na mapie</p>
-      </div>
+      </a>
     </div>
   </div>
 </section>
