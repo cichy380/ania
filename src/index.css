@@ -51,20 +51,6 @@ div[aria-hidden='true'] {
   }
 }
 
-.dialog-close {
-  position: absolute;
-  top: 0.5em;
-  right: 0.5em;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  font-weight: bold;
-  font-size: 1.25em;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.15s;
-}
-
 @media screen and (min-width: 700px) {
   .dialog-close {
     top: 1em;
