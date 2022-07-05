@@ -9,6 +9,7 @@
   "dependencies": {
     "a11y-dialog": "^7.4.0",
     "scroll-lock": "^2.1.5",
+    "swiper": "^8.2.6",
     "tippy.js": "^6.3.7",
     "typed.js": "^2.0.12"
   },

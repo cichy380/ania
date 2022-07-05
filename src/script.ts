@@ -3,6 +3,9 @@ import A11yDialog from 'a11y-dialog'
 import tippy from 'tippy.js';
 import 'tippy.js/dist/tippy.css';
 import scrollLock from './scroll-lock';
+import Swiper, { Navigation } from 'swiper';
+import 'swiper/swiper.min.css';
+import 'swiper/modules/navigation/navigation.min.css';
 
 const options = {
   strings: ['magistrem fizjoterapii', 'instruktorem wad postawy', 'terapeutką PNF'],
@@ -74,3 +77,15 @@ tippy('.tooltip-pnf', {
   placement: 'top',
   arrow: true,
 })
+
+
+new Swiper('.swiper', {
+  modules: [ Navigation ],
+  slidesPerView: 1,
+  spaceBetween: 0,
+  centeredSlides: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
